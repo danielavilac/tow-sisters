@@ -11,6 +11,6 @@
 // about supported directives.
 //= require jquery
 //= require jquery_ujs
-//= require jquery.slick.js
-//= require slick.carousel
+//= require jquery.slick
+//= require carousel
 //= require_tree .

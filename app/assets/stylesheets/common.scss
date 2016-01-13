@@ -1,12 +1,14 @@
 body {
   font-family: $merriweather;
   margin: 0;
+  .navbar {
+    border-bottom: 1px solid #111;
+  }
   .container {
     width: 1200px;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid #111;
   }
   .menu {
     float: right;
@@ -19,43 +21,22 @@ body {
     width: 20px;
     cursor: pointer;
   }
-  .slide-image {
-    width: auto !important;
-    margin-right: 50px;
-  }
-  .slick-slider {
-    padding-top: 50px !important;
-  }
-  .slick-list {
-    overflow: visible !important;
-  }
-  .slide-text {
+}
+.slick {
+  .box-container {
     text-align: center;
-    width: 650px;
-    font-family: Roboto;
-    font-size: 16px;
-    margin: 0 auto;
-  }
-  .slide-title {
-    text-align: center;
-    padding: 40px;
-    font-family: Open sans;
-    font-weight: 300;
-    font-size: 25px;
-    margin: 0 auto;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
-  .prevarrow {
-    position: absolute;
-    z-index: 1;
-    padding-top: 191px;
-    display: inline-block;
-  }
-  .nextarrow {
-    position: absolute;
-    z-index: 1;
-    padding-top: 191px;
-    display: inline-block;
+    h1 {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+    p {
+      margin: 30px 40px 0 40px;
+    }
+    .image {
+      height: 360px;
+      margin: 0 40px 0 40px;
+      background-size: cover;
+    }
+
   }
 }
