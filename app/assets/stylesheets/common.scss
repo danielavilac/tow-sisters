@@ -19,4 +19,43 @@ body {
     width: 20px;
     cursor: pointer;
   }
+  .slide-image {
+    width: auto !important;
+    margin-right: 50px;
+  }
+  .slick-slider {
+    padding-top: 50px !important;
+  }
+  .slick-list {
+    overflow: visible !important;
+  }
+  .slide-text {
+    text-align: center;
+    width: 650px;
+    font-family: Roboto;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  .slide-title {
+    text-align: center;
+    padding: 40px;
+    font-family: Open sans;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .prevarrow {
+    position: absolute;
+    z-index: 1;
+    padding-top: 191px;
+    display: inline-block;
+  }
+  .nextarrow {
+    position: absolute;
+    z-index: 1;
+    padding-top: 191px;
+    display: inline-block;
+  }
 }

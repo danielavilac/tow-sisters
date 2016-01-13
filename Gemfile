@@ -7,6 +7,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'responders'
+gem "jquery-slick-rails"
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
@@ -14,14 +16,17 @@ group :development, :test do
 end
 gem 'pg'
 gem 'simple_form'
+
 group :development do
   gem 'foreman'
   gem 'rails_layout'
 end
+
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-rescue'
 end
+
 group :production do
   gem 'puma'
   gem 'rails_12factor'
