@@ -2,23 +2,14 @@
   <%= image_tag "search.png", class: "search" %>
   <%= image_tag "tworld.png", class: "logo" %>
   <%= image_tag "menu.png", class: "menu" %>
-  <img src="" alt="" />
 </div>
 
 <div class="slick">
-	<div class="box-container">
-  	<div style="background-image: url(<%= image_path("slide1.png") %>)" class="image"></div>
-  	<h1>Hot Spring</h1>
-  	<p>Pasar unas vacaciones por Tokio nunca ha sido tan divertido. Colores de otoño inundan las calles. y no hay nada mejor que poder usarnos tu también.</p>
-	</div>
-	<div class="box-container">
-  	<div style="background-image: url(<%= image_path("slide2.png") %>)" class="image"></div>
-  	<h1>Hot Spring</h1>
-  	<p>Pasar unas vacaciones por Tokio nunca ha sido tan divertido. Colores de otoño inundan las calles. y no hay nada mejor que poder usarnos tu también.</p>
-	</div>
-	<div class="box-container">
-  	<div style="background-image: url(<%= image_path("slide3.png") %>)" class="image"></div>
-  	<h1>Hot Spring</h1>
-  	<p>Pasar unas vacaciones por Tokio nunca ha sido tan divertido. Colores de otoño inundan las calles. y no hay nada mejor que poder usarnos tu también.</p>
-	</div>
+	<% @objects.first(3).each do |object| %>
+		<div class="box-container">
+	  	<div style="background-image: url(<%= image_path("slide1.png") %>)" class="image"></div>
+	  	<h1><%= object.name %></h1>
+	  	<p><%= object.description %></p>
+		</div>
+	<% end %>
 </div>
