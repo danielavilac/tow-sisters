@@ -1,9 +1,1 @@
-<div class="slick">
-	<% @objects.first(3).each do |object| %>
-		<div class="box-container">
-	  	<div style="background-image: url(<%= image_path("slide1.png") %>)" class="image"></div>
-	  	<h1><%= object.name %></h1>
-	  	<p><%= object.description %></p>
-		</div>
-	<% end %>
-</div>
+<%= render 'carousel' %>
